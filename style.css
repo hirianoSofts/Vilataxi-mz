@@ -29,8 +29,8 @@ button{font:inherit}
 .desktop-nav a{transition:.25s}
 .desktop-nav a:hover,.desktop-nav a.active{color:var(--orange)}
 .nav-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
-.download-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:#1D1D1D;border: 2px solid #5c5c5c;border-radius:999px;font-size:18px;font-weight:600;padding:11px 18px;transition:.25s}
-.download-btn:hover{background:#1D1D1D;color:#fff;transform:translateY(-2px)}
+.download-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#E65100;color: white;border: none;border-radius:999px;font-size:18px;font-weight:600;padding:11px 18px;transition:.25s}
+.download-btn:hover{background: white;color:#fff;transform:translateY(-2px)}
 .download-btn iconify-icon{font-size:18px}
 .menu-btn{display:none;border:0;background:#f1f1f1;width:42px;height:42px;border-radius:50%;align-items:center;justify-content:center}
 .menu-btn iconify-icon{font-size:22px}
@@ -52,9 +52,9 @@ h1 em,h2 span{font-style:normal;color:var(--orange)}
 .hero-copy>p{max-width:560px;color:#666;font-size:17px;margin:26px 0 32px}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 20px;border-radius:999px;font-size:13px;font-weight:700;transition:.25s;cursor:pointer}
-.btn-ghost{border:1px solid #d9d6d1;background:rgba(255,255,255,.45)}
+.btn-ghost{border:2px solid #E65100;background:rgba(255,255,255,.45)}
 .btn-ghost:hover{background:#fff;transform:translateY(-2px)}
-.btn-download{background:#171717;color:#fff;border:1px solid #171717}
+.btn-download{background:#171717;color:#fff;border: none}
 .btn-download:hover{background:#000;transform:translateY(-2px)}
 .hero-note{display:flex;align-items:center;gap:9px;margin-top:25px;color:#777;font-size:11px}
 .pulse{width:8px;height:8px;border-radius:50%;background:#36a269;box-shadow:0 0 0 5px rgba(54,162,105,.1)}
@@ -196,7 +196,6 @@ footer{background:#0b0b0b;color:#fff}.footer-top{display:grid;grid-template-colu
 }
 @media(max-width:390px){
   h1{font-size:42px}
-  .downloayd-btn span{display:none}
-  .downloagd-btn{width:40px;height:40px;padding:0}
+  .download-btn span{display:none}
   .hero-visual{min-height:390px}.card-rating{right:-14px}.card-route{left:-14px}
 }
