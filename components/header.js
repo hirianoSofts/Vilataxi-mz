@@ -18,8 +18,8 @@ function loadSharedHeader() {
           <a href="${prefix}index.html#sobre">Sobre nós</a>
         </nav>
         <div class="auth-actions">
-          <a class="signin" href="#entrar">Sign in</a>
-          <a class="login" href="#entrar">Login <i class="fi fi-rr-user"></i></a>
+          <a class="signin" href="#entrar">Entrar</a>
+          <a class="login" href="#entrar">Conecte se<i class="fi fi-rr-user"></i></a>
         </div>
         <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><i class="fi fi-rr-menu-burger"></i></button>
       </header>
