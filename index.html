@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-MZ">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Título e Metadados Básicos -->
   <title>VilaTáxi — Moçambique</title>  
@@ -35,293 +35,65 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="estilos/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-  <div class="announcement">
-    <span class="announcement-dot"></span>
-    <span>O SEU PRÓXIMO DESTINO ESTÁ MAIS PERTO.</span>
-    <i class="hgi hgi-stroke hgi-arrow-up-right"></i>
-  </div>
-
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="VilaTaxi — Início">
-      <img src="assets/vilataxi-logo.png" alt="Símbolo VilaTaxi" />
-    </a>
-
-    <nav class="desktop-nav" aria-label="Navegação principal">
-      <a href="#solucao">A SOLUÇÃO</a>
-      <a href="#como-funciona">COMO FUNCIONA</a>
-      <a href="#motoristas">PARA MOTORISTAS</a>
-      <a href="#sobre">SOBRE NÓS</a>
-    </nav>
-
-    <div class="header-actions">
-      <a class="signin-link" href="#entrar">SIGN IN</a>
-      <a class="button button-orange button-small" href="#entrar">LOGIN <i class="hgi hgi-stroke hgi-arrow-up-right"></i></a>
-    </div>
-
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span>
-    </button>
-  </header>
-
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <nav aria-label="Navegação móvel">
-      <a href="#solucao">A SOLUÇÃO <i class="hgi hgi-stroke hgi-arrow-up-right"></i></a>
-      <a href="#como-funciona">COMO FUNCIONA <i class="hgi hgi-stroke hgi-arrow-up-right"></i></a>
-      <a href="#motoristas">PARA MOTORISTAS <i class="hgi hgi-stroke hgi-arrow-up-right"></i></a>
-      <a href="#sobre">SOBRE NÓS <i class="hgi hgi-stroke hgi-arrow-up-right"></i></a>
-    </nav>
-    <p>MOVEMOS PESSOAS. LIGAMOS POSSIBILIDADES.</p>
-  </div>
+  <!-- Cabeçalho Partilhado Injetado Automaticamente -->
+  <div id="shared-header"></div>
 
   <main>
-    <section class="hero section-shell" id="inicio">
+    <section class="hero" id="inicio">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span> MOBILIDADE À SUA MANEIRA</div>
-        <h1>A CIDADE<br>MOVE-SE <span class="orange-text">CONNOSCO.</span></h1>
-        <p class="hero-description">Chegue onde precisa, com mais liberdade. A VilaTaxi aproxima pessoas, destinos e oportunidades — numa viagem de cada vez.</p>
-        <div class="hero-actions">
-          <a href="/download/" class="button button-orange button-large">DESCARREGAR APK<i class="hgi hgi-stroke hgi-arrow-up-right"></i></a>
-          <a href="#como-funciona" class="text-link">COMO FUNCIONA <i class="hgi hgi-stroke hgi-arrow-down-right"></i></a>
-        </div>
-        <div class="hero-proof">
-          <div class="proof-icon"><i class="hgi hgi-stroke hgi-location-01"></i></div>
-          <div><strong>MAIS PERTO DO QUE PENSA.</strong><span>UMA NOVA FORMA DE SE MOVER.</span></div>
-        </div>
+        <div class="eyebrow"><span class="eyebrow-line"></span> MOBILIDADE FEITA PARA SI</div>
+        <h1>Movemos pessoas.<br><span>Aproximamos destinos.</span></h1>
+        <p>Peça a sua viagem com facilidade. Do dia a dia aos momentos especiais, chegar ao seu destino pode ser simples.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#servicos">Descobrir os serviços <i class="fi fi-rr-arrow-right"></i></a><a class="text-link" href="#como-funciona">Como funciona <i class="fi fi-rr-arrow-down-right"></i></a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>V</span><span>✦</span><span>↗</span></div><div><strong>Uma cidade mais conectada</strong><small>Mobilidade local, com pessoas no centro.</small></div></div>
       </div>
-
-      <div class="hero-visual" aria-label="Identidade visual VilaTaxi">
-        <div class="visual-grid"></div>
-        <div class="visual-orbit orbit-one"></div>
-        <div class="visual-orbit orbit-two"></div>
-        <div class="visual-label label-top"><span class="live-dot"></span> EM MOVIMENTO</div>
-        <div class="hero-logo-wrap"><img src="https://opais.co.mz/wp-content/uploads/2023/12/transporte.jpg" alt="Transporte VilaTaxi" /></div>
-        <div class="visual-coordinate">25°58' S&nbsp; 32°35' E</div>
-        <div class="visual-label label-bottom"><i class="hgi hgi-stroke hgi-navigation-03"></i> O SEU DESTINO. O SEU TEMPO.</div>
-        <span class="visual-index">01 / 04</span>
+      <div class="hero-photo" role="img" aria-label="Transporte urbano numa rua costeira de Moçambique">
+        <div class="photo-top"><span><i class="fi fi-rr-map-marker"></i> VILANKULOS, MOÇAMBIQUE</span><span class="photo-badge"><i class="fi fi-rr-check-circle"></i> Vamos juntos</span></div>
+        <div class="photo-bottom"><div><small>O seu próximo destino</small><strong>Está mais perto.</strong></div><span class="round-arrow"><i class="fi fi-rr-arrow-up-right"></i></span></div>
       </div>
-      <div class="hero-bottomline"><span>FEITO PARA A CIDADE.</span><span>DESENHADO PARA SI.</span><span>VILATAXI © 2026</span></div>
+      <div class="hero-cloud"></div>
     </section>
 
-    <section class="ticker" aria-label="Valores VilaTaxi">
-      <div class="ticker-track">
-        <span>MAIS LIBERDADE</span><b>✳</b><span>MENOS COMPLICAÇÃO</span><b>✳</b><span>VIAGENS COM PROPÓSITO</span><b>✳</b><span>MAIS LIBERDADE</span><b>✳</b><span>MENOS COMPLICAÇÃO</span><b>✳</b><span>VIAGENS COM PROPÓSITO</span><b>✳</b>
+    <section class="stats" aria-label="Vantagens VilaTáxi">
+      <div><span class="stat-icon"><i class="fi fi-rr-route"></i></span><p><strong>Viagens práticas</strong><small>Peça sem complicações.</small></p></div>
+      <div><span class="stat-icon"><i class="fi fi-rr-shield-check"></i></span><p><strong>Mais confiança</strong><small>Uma experiência pensada para si.</small></p></div>
+      <div><span class="stat-icon"><i class="fi fi-rr-marker"></i></span><p><strong>Mobilidade local</strong><small>Feita para a nossa cidade.</small></p></div>
+    </section>
+
+    <section class="section services" id="servicos">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> OS NOSSOS SERVIÇOS</div><h2>Escolha como<br>quer chegar.</h2></div><p>Uma solução de mobilidade para diferentes percursos, necessidades e momentos do seu dia.</p></div>
+      <div class="service-grid">
+        <article class="service-card service-moto"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=85" alt="Motociclo para deslocações urbanas" loading="lazy"><div class="service-shade"></div><div class="service-content"><span class="service-number">01 / ÁGIL</span><h3>Mototáxi</h3><p>Para percursos rápidos e para quando cada minuto conta.</p><a href="#download" aria-label="Conhecer mototáxi"><i class="fi fi-rr-arrow-up-right"></i></a></div></article>
+        <article class="service-card service-txopela"><img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?auto=format&fit=crop&w=1000&q=85" alt="Transporte de passageiros em veículo urbano" loading="lazy"><div class="service-shade"></div><div class="service-content"><span class="service-number">02 / LOCAL</span><h3>Txopela</h3><p>Uma forma prática de circular e descobrir a cidade.</p><a href="#download" aria-label="Conhecer txopela"><i class="fi fi-rr-arrow-up-right"></i></a></div></article>
+        <article class="service-card service-car"><img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40a?auto=format&fit=crop&w=1000&q=85" alt="Interior confortável de automóvel" loading="lazy"><div class="service-shade"></div><div class="service-content"><span class="service-number">03 / CONFORTO</span><h3>Carro</h3><p>Mais conforto para os seus compromissos e passeios.</p><a href="#download" aria-label="Conhecer viagens de carro"><i class="fi fi-rr-arrow-up-right"></i></a></div></article>
       </div>
     </section>
 
-    <section class="intro section-shell" id="solucao">
-      <div class="section-kicker">01 — A NOSSA VISÃO</div>
-      <div class="intro-content">
-        <h2>NÃO É SÓ CHEGAR.<br>É <span class="orange-text">CHEGAR MELHOR.</span></h2>
-        <div class="intro-side">
-          <p>A mobilidade deve acompanhar o ritmo da sua vida. Criámos a VilaTaxi para tornar cada deslocação mais simples, acessível e intuitiva.</p>
-          <a class="circle-link" href="#sobre" aria-label="Conheça a nossa visão"><i class="hgi hgi-stroke hgi-arrow-down-right"></i></a>
-        </div>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card feature-dark">
-          <div class="feature-number">01 / SIMPLICIDADE</div>
-          <div class="feature-icon"><i class="hgi hgi-stroke hgi-touch-01"></i></div>
-          <h3>SEM VOLTAS<br>DESNECESSÁRIAS.</h3>
-          <p>Uma experiência intuitiva, desde o primeiro toque até ao seu destino.</p>
-          <i class="hgi hgi-stroke hgi-arrow-up-right card-arrow"></i>
-        </article>
-        <article class="feature-card feature-orange">
-          <div class="feature-number">02 / PROXIMIDADE</div>
-          <div class="feature-icon"><i class="hgi hgi-stroke hgi-route-01"></i></div>
-          <h3>A CIDADE<br>AO SEU ALCANCE.</h3>
-          <p>Ligamos pessoas aos lugares e às oportunidades que fazem a diferença.</p>
-          <i class="hgi hgi-stroke hgi-arrow-up-right card-arrow"></i>
-        </article>
-        <article class="feature-card feature-light">
-          <div class="feature-number">03 / CONFIANÇA</div>
-          <div class="feature-icon"><i class="hgi hgi-stroke hgi-shield-01"></i></div>
-          <h3>VIAJE COM<br>TRANQUILIDADE.</h3>
-          <p>Uma solução pensada para colocar a sua experiência em primeiro lugar.</p>
-          <i class="hgi hgi-stroke hgi-arrow-up-right card-arrow"></i>
-        </article>
+    <section class="how section" id="como-funciona">
+      <div class="how-image"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="Pessoa a utilizar o telemóvel" loading="lazy"><div class="image-note"><i class="fi fi-rr-smartphone"></i><span><strong>Tudo começa no seu telemóvel</strong><small>Uma experiência simples e intuitiva.</small></span></div></div>
+      <div class="how-copy"><div class="eyebrow"><span class="eyebrow-line"></span> SIMPLES COMO DEVE SER</div><h2>A sua viagem.<br>Do seu jeito.</h2><p class="section-intro">Pensámos em cada passo para que possa concentrar-se no que realmente importa: chegar onde precisa.</p>
+        <div class="steps"><div class="step"><span>01</span><div><h3>Escolha o destino</h3><p>Indique onde está e para onde pretende ir.</p></div></div><div class="step"><span>02</span><div><h3>Escolha a viagem</h3><p>Selecione a opção que combina com o seu percurso.</p></div></div><div class="step"><span>03</span><div><h3>Vá com tranquilidade</h3><p>Acompanhe o processo e prepare-se para seguir viagem.</p></div></div></div>
       </div>
     </section>
 
-    <section class="how-section" id="como-funciona">
-      <div class="section-shell how-inner">
-        <div class="section-kicker">02 — SEM COMPLICAÇÕES</div>
-        <div class="how-heading">
-          <h2>TRÊS PASSOS.<br><span class="orange-text">UM NOVO CAMINHO.</span></h2>
-          <p>O seu tempo é importante. Por isso, a experiência VilaTaxi foi pensada para ser direta, simples e fácil de acompanhar.</p>
-        </div>
-        <div class="steps">
-          <article class="step"><span class="step-number">01</span><div class="step-icon"><i class="hgi hgi-stroke hgi-smart-phone-01"></i></div><h3>ABRA A APP</h3><p>Tenha a VilaTaxi sempre à mão e prepare a sua próxima deslocação.</p></article>
-          <article class="step"><span class="step-number">02</span><div class="step-icon"><i class="hgi hgi-stroke hgi-location-04"></i></div><h3>ESCOLHA O DESTINO</h3><p>Indique para onde vai e organize a sua viagem sem complicações.</p></article>
-          <article class="step"><span class="step-number">03</span><div class="step-icon"><i class="hgi hgi-stroke hgi-car-05"></i></div><h3>SIGA O SEU CAMINHO</h3><p>Desfrute de uma forma mais simples de se deslocar pela cidade.</p></article>
-        </div>
-      </div>
-    </section>
+    <section class="driver-section" id="motoristas"><div class="driver-image"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Profissionais a trabalhar num ambiente local" loading="lazy"></div><div class="driver-copy"><div class="eyebrow"><span class="eyebrow-line"></span> PARA QUEM MOVE A CIDADE</div><h2>Conduza o seu futuro.</h2><p>É motorista? Junte-se à comunidade VilaTáxi e ajude a ligar pessoas, negócios e destinos em Vilankulos.</p><ul><li><i class="fi fi-rr-check"></i> Registo simples</li><li><i class="fi fi-rr-check"></i> Diferentes categorias de transporte</li><li><i class="fi fi-rr-check"></i> Uma oportunidade de crescer connosco</li></ul><a class="button button-dark" href="https://www.cadastro.govilataxi.online/">Quero ser motorista <i class="fi fi-rr-arrow-up-right"></i></a></div></section>
 
-    <section class="driver-section section-shell" id="motoristas">
-      <div class="driver-visual">
-        <div class="driver-visual-top"><span>VILATAXI / PARCEIROS</span><i class="hgi hgi-stroke hgi-arrow-up-right"></i></div>
-        <div class="driver-mark"><img src="assets/vilataxi-logo.png" alt="Logótipo VilaTaxi Preto" class="driver-logo-tint" /></div>
-        <div class="driver-visual-bottom"><span>O SEU PRÓXIMO PASSO</span><span>COMEÇA AQUI.</span></div>
-      </div>
-      <div class="driver-copy">
-        <div class="section-kicker">03 — CRESCEMOS JUNTOS</div>
-        <h2>AO VOLANTE<br>DO SEU <span class="orange-text">FUTURO.</span></h2>
-        <p>Faça parte de uma rede de mobilidade que está a aproximar a cidade. A VilaTaxi abre espaço para motoristas e parceiros que querem avançar connosco.</p>
-        <a class="button button-dark button-large" href="#contacto">SEJA NOSSO PARCEIRO <i class="hgi hgi-stroke hgi-arrow-up-right"></i></a>
-        <div class="driver-note"><i class="hgi hgi-stroke hgi-checkmark-circle-02"></i> OPORTUNIDADES PARA QUEM QUER AVANÇAR.</div>
-      </div>
-    </section>
-
-    <section class="download-section" id="baixar">
-      <div class="section-shell download-inner">
-        <div class="download-copy">
-          <div class="section-kicker">04 — LEVE A VILATAXI CONSIGO</div>
-          <h2>O SEU PRÓXIMO<br>DESTINO <span>COMEÇA<br>NO TELEMÓVEL.</span></h2>
-          <p>Prepare-se para uma nova forma de se mover. Descarregue a aplicação VilaTaxi e tenha a cidade mais perto.</p>
-          <a class="button button-white button-large" href="/download/">DESCARREGAR A APP <i class="hgi hgi-stroke hgi-download-04"></i></a>
-          <small>DISPONIBILIDADE DA APLICAÇÃO SUJEITA A LANÇAMENTO.</small>
-        </div>
-        <div class="phone-scene">
-          <div class="phone-glow"></div>
-          <div class="transport-image-wrapper">
-            <img src="https://opais.co.mz/wp-content/uploads/2023/12/transporte.jpg" alt="Transporte VilaTaxi" />
-          </div>
-          <div class="phone-caption">VILATAXI — A CIDADE MOVE-SE CONNOSCO.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section section-shell" id="sobre">
-      <div class="section-kicker">05 — SOBRE A VILATAXI</div>
-      <div class="contact-layout">
-        <h2>O MOVIMENTO<br><span class="orange-text">NÃO PÁRA.</span></h2>
-        <div><p>Estamos a construir uma experiência de mobilidade feita para as pessoas, para a cidade e para tudo aquilo que vem a seguir.</p><a class="text-link" href="#contacto">FALE CONNOSCO <i class="hgi hgi-stroke hgi-arrow-up-right"></i></a></div>
-      </div>
-    </section>
-
-    <section class="contact-strip" id="contacto">
-      <div class="section-shell contact-strip-inner">
-        <div><span class="section-kicker">VAMOS CONVERSAR?</span><h2>O PRÓXIMO PASSO É <span class="orange-text">NOSSO.</span></h2></div>
-        <a class="button button-orange button-large" href="mailto:ola@vilataxi.com">ENTRE EM CONTACTO <i class="hgi hgi-stroke hgi-arrow-up-right"></i></a>
-      </div>
-    </section>
+    <section class="download section" id="download"><div class="download-copy"><div class="eyebrow"><span class="eyebrow-line"></span> VILATÁXI NO SEU DIA A DIA</div><h2>O próximo destino<br>começa aqui.</h2><p>Prepare-se para uma nova forma de se movimentar. Descarregue a aplicação Android e tenha a mobilidade mais perto.</p><a class="button button-light" href="download/index.html"><i class="fi fi-rr-download"></i> Baixar APK</a><span class="download-note"><i class="fi fi-rr-smartphone"></i> Disponível para Android</span></div><div class="download-visual"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85" alt="Telemóvel moderno" loading="lazy"><div class="floating-label"><span class="mini-v">V</span><span><strong>VilaTáxi</strong><small>A sua cidade, mais perto.</small></span></div></div></section>
   </main>
 
-  <footer class="site-footer" id="footer">
-  <div class="footer-main section-shell"><!-- MARCA E APRESENTAÇÃO -->
-<div class="footer-brand-column">
-  <a class="footer-brand" href="#inicio" aria-label="VilaTaxi — Início">
-    <img src="assets/vilataxi-logo.png" alt="Logótipo VilaTaxi">
-    <span>VILA<span class="brand-accent">TAXI</span></span>
-  </a>
+  <!-- Rodapé Partilhado Injetado Automaticamente -->
+  <div id="shared-footer"></div>
 
-  <p class="footer-description">
-    A cidade move-se connosco. Ligamos pessoas, destinos e oportunidades
-    através de uma experiência de mobilidade simples e intuitiva.
-  </p>
-
-  <a href="/download/" class="footer-download">
-    <span class="footer-download-icon">
-      <i class="hgi hgi-stroke hgi-download-04"></i>
-    </span>
-
-    <span class="footer-download-copy">
-      <small>A SUA PRÓXIMA VIAGEM COMEÇA AQUI</small>
-      <strong>DESCARREGAR A VILATAXI</strong>
-    </span>
-
-    <i class="hgi hgi-stroke hgi-arrow-up-right footer-download-arrow"></i>
-  </a>
-
-  <div class="footer-location">
-    <span class="footer-status-dot"></span>
-    <span>FEITO PARA SE MOVER CONSIGO</span>
-  </div>
-</div>
-
-<!-- NAVEGAÇÃO -->
-<div class="footer-column">
-  <h3>EXPLORAR</h3>
-  <nav aria-label="Explorar">
-    <a href="#inicio">Página inicial</a>
-    <a href="#solucao">A nossa solução</a>
-    <a href="#como-funciona">Como funciona</a>
-    <a href="#sobre">Sobre a VilaTaxi</a>
-    <a href="#contacto">Contactos</a>
-  </nav>
-</div>
-
-<!-- PARA UTILIZADORES -->
-<div class="footer-column">
-  <h3>PARA SI</h3>
-  <nav aria-label="Serviços">
-    <a href="/download/">Passageiros</a>
-    <a href="/download/">Descarregar a aplicação</a>
-    <a href="#motoristas">Seja nosso motorista</a>
-    <a href="#motoristas">Torne-se parceiro</a>
-    <a href="#contacto">Ajuda e suporte</a>
-  </nav>
-</div>
-
-<!-- INFORMAÇÕES -->
-<div class="footer-column">
-  <h3>INFORMAÇÕES</h3>
-  <nav aria-label="Informações legais">
-    <a href="/privacidade/">Política de privacidade</a>
-    <a href="/termos/">Termos e condições</a>
-    <a href="/cookies/">Política de cookies</a>
-    <a href="#contacto">Fale connosco</a>
-  </nav>
-
-  <div class="footer-contact">
-    <span>CONTACTO GERAL</span>
-    <a href="mailto:ola@vilataxi.com">ola@vilataxi.com</a>
-  </div>
-</div>
-
-  </div>  <!-- FAIXA INFERIOR -->  <div class="footer-bottom">
-    <div class="section-shell footer-bottom-inner">  <div class="footer-copyright">
-    <span>© 2026 VILATAXI.</span>
-    <span>TODOS OS DIREITOS RESERVADOS.</span>
-  </div>
-
-  <div class="footer-socials">
-    <span class="footer-social-label">ACOMPANHE O MOVIMENTO</span>
-
-    <!-- Substitua # pelos URLs oficiais das redes sociais -->
-    <a href="#" aria-label="Instagram da VilaTaxi">
-      <i class="hgi hgi-stroke hgi-instagram"></i>
-    </a>
-
-    <a href="#" aria-label="Facebook da VilaTaxi">
-      <i class="hgi hgi-stroke hgi-facebook-01"></i>
-    </a>
-
-    <a href="#" aria-label="TikTok da VilaTaxi">
-      <i class="hgi hgi-stroke hgi-tiktok"></i>
-    </a>
-  </div>
-
-  <a class="back-top" href="#inicio">
-    VOLTAR AO TOPO
-    <span><i class="hgi hgi-stroke hgi-arrow-up-right"></i></span>
-  </a>
-
-</div>
-
-  </div>
-</footer>
-
-  <div class="floating-download" aria-label="Descarregar aplicação">
-    <a href="/download/" class="floating-main"><i class="hgi hgi-stroke hgi-download-04"></i><span>BAIXAR APK</span></a>
-    <a href="/download/" class="floating-arrow" aria-label="Ir para download"><i class="hgi hgi-stroke hgi-arrow-down"></i></a>
-  </div>
+  <!-- Scripts dos Componentes Partilhados -->
+  <script src="components/header.js"></script>
+  <script src="components/footer.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
