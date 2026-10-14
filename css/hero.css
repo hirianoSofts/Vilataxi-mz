@@ -1,0 +1,307 @@
+/* ==========================================
+HERO PHOTO — IMAGEM QUADRADA
+========================================== */
+
+.hero-photo {
+position: relative;
+z-index: 2;
+width: 100%;
+aspect-ratio: 1 / 1;
+height: auto;
+align-self: center;
+margin: 0 0 70px;
+border-radius: 16px;
+overflow: hidden;
+isolation: isolate;
+background: #f0e8e0;
+box-shadow: 0 22px 45px rgba(166, 58, 18, 0.18);
+}
+
+/* Imagens do carrossel */
+
+.hero-slides {
+position: absolute;
+inset: 0;
+overflow: hidden;
+border-radius: inherit;
+}
+
+.hero-slide {
+position: absolute;
+inset: 0;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+opacity: 0;
+transform: scale(1.04);
+transition: opacity 0.8s ease, transform 5s ease;
+}
+
+.hero-slide.active {
+opacity: 1;
+transform: scale(1);
+}
+
+/* Sombra concentrada na parte inferior da imagem */
+
+.hero-shade {
+position: absolute;
+inset: 0;
+z-index: 1;
+pointer-events: none;
+background: linear-gradient(
+to bottom,
+rgba(0, 0, 0, 0.02) 35%,
+rgba(0, 0, 0, 0.16) 58%,
+rgba(0, 0, 0, 0.68) 100%
+);
+}
+
+/* Informações superiores */
+
+.photo-top {
+position: absolute;
+z-index: 2;
+top: 20px;
+left: 20px;
+right: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+flex-wrap: wrap;
+color: #fff;
+}
+
+/* Área inferior do texto */
+
+.photo-bottom {
+position: absolute;
+z-index: 3;
+bottom: 20px;
+left: 20px;
+right: 20px;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+gap: 12px;
+color: #fff;
+}
+
+.photo-bottom small,
+.photo-bottom strong {
+display: block;
+}
+
+.photo-bottom small {
+font-size: 13px;
+line-height: 1.4;
+opacity: 0.92;
+}
+
+.photo-bottom strong {
+font-size: clamp(22px, 2.5vw, 30px);
+line-height: 1.15;
+letter-spacing: -0.8px;
+margin-top: 4px;
+}
+
+.round-arrow {
+width: 44px;
+height: 44px;
+flex-shrink: 0;
+border-radius: 50%;
+display: grid;
+place-items: center;
+background: var(--orange);
+color: #fff;
+font-size: 18px;
+}
+
+/* ==========================================
+INDICADORES PEQUENOS DE PROGRESSO
+Acima de "O seu próximo destino"
+========================================== */
+
+.hero-progress-indicators {
+position: absolute;
+z-index: 4;
+bottom: 91px;
+left: 20px;
+right: 20px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 5px;
+width: auto;
+}
+
+.progress-bar-item {
+position: relative;
+display: block;
+width: 22px;
+height: 3px;
+flex: 0 0 22px;
+padding: 0;
+overflow: hidden;
+border: 0;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.45);
+cursor: pointer;
+-webkit-appearance: none;
+appearance: none;
+}
+
+.progress-fill {
+position: absolute;
+inset: 0 auto 0 0;
+width: 0;
+border-radius: inherit;
+background: #fff;
+}
+
+.progress-bar-item.active {
+width: 30px;
+flex-basis: 30px;
+background: rgba(255, 255, 255, 0.4);
+}
+
+.progress-bar-item.active .progress-fill {
+animation: heroProgress 5s linear forwards;
+}
+
+@keyframes heroProgress {
+from {
+width: 0;
+}
+to {
+width: 100%;
+}
+}
+
+/* Nuvem decorativa da hero */
+
+.hero-cloud {
+position: absolute;
+z-index: 1;
+bottom: -120px;
+left: 20%;
+width: 70%;
+height: 180px;
+border-radius: 50%;
+background: #fff;
+filter: blur(35px);
+opacity: 0.95;
+}
+
+/* ==========================================
+RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 1000px) {
+.hero-photo {
+width: 100%;
+height: auto;
+aspect-ratio: 1 / 1;
+margin-bottom: 45px;
+}
+
+.hero-progress-indicators {
+bottom: 85px;
+}
+}
+
+@media (max-width: 760px) {
+.hero-photo {
+width: 100%;
+height: auto;
+aspect-ratio: 1 / 1;
+margin: 5px 0 35px;
+border-radius: 14px;
+box-shadow: 0 18px 35px rgba(166, 58, 18, 0.2);
+}
+
+.photo-top {
+top: 15px;
+left: 15px;
+right: 15px;
+gap: 8px;
+}
+
+.photo-top > span:first-child {
+font-size: 10px;
+letter-spacing: 0.5px;
+}
+
+.photo-badge {
+font-size: 11px;
+padding: 7px 9px;
+}
+
+.photo-bottom {
+bottom: 17px;
+left: 15px;
+right: 15px;
+}
+
+.photo-bottom small {
+font-size: 12px;
+}
+
+.photo-bottom strong {
+font-size: 23px;
+}
+
+.round-arrow {
+width: 38px;
+height: 38px;
+font-size: 16px;
+}
+
+.hero-progress-indicators {
+left: 15px;
+right: 15px;
+bottom: 82px;
+gap: 5px;
+}
+
+.progress-bar-item {
+width: 19px;
+height: 3px;
+flex-basis: 19px;
+}
+
+.progress-bar-item.active {
+width: 27px;
+flex-basis: 27px;
+}
+
+.hero-cloud {
+bottom: -135px;
+left: 0;
+width: 100%;
+height: 170px;
+filter: blur(28px);
+}
+}
+
+@media (max-width: 380px) {
+.photo-bottom strong {
+font-size: 21px;
+}
+
+.hero-progress-indicators {
+bottom: 78px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.hero-slide {
+transition: none;
+}
+
+.progress-bar-item.active .progress-fill {
+animation: none;
+width: 100%;
+}
+  }
